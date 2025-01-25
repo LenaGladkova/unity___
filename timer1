@@ -1,0 +1,38 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+public class Timer : MonoBehaviour
+{
+    public float deleyInSeconds = 5f;
+    private bool isCountimg = false;
+    private float startTime;
+  
+    void Start()
+    {
+        
+    }
+
+    }
+  
+    void Update()
+    {
+    if(Input.GetKeyDown(KeyCode.Space)&& !isCounting)
+    {
+        isCouting = true;
+        startTime = Timer.time;
+        Debug.Log("Відлік часу разпочато");
+    }
+     if(isCounting && Time.time >= startTime + deleyInSeconds)
+    {
+       
+
+    }
+    else
+    {
+        isCouting = false;
+        Debug.Log("Дія виконана після затримки");
+    }
+    }
+}
